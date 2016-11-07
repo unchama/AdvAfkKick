@@ -26,4 +26,9 @@ public class PlayerData {
 		idletime = 0;
 
 	}
+
+	//オフラインかどうか
+	public boolean isOffline() {
+		return AdvAfkKick.plugin.getServer().getPlayer(uuid) == null;
+	}
 }
